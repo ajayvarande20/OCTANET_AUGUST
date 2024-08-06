@@ -1,0 +1,339 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-image {
+    width: 100px; 
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.logo-link {
+    display: inline-block; 
+}
+
+.nav-container {
+    flex-grow: 1;
+    text-align: right;
+    height: 60px;
+    display: block;
+}
+
+.nav-item {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    margin: 0;
+    margin-top: 12px;    
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 8px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: block;
+}
+.nav-link:hover {
+    color: #333;
+    background-color: white;
+    border-radius: 6px;
+}
+.nav-list{
+    padding-right: 2rem;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+/* banner section */
+.banner{
+    width: 100%;
+    height:672px;
+}
+
+.banner-textmain{
+    top:40%
+}
+.banner-text{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+}
+.banner-text1{
+    font-size: 3.5rem;
+    position: absolute;
+    font-weight: bolder;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    }
+.banner-text2{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 58%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+}
+.banner-btn{
+    font-size: 1rem;
+    background-color: coral;
+    border-radius: 2rem;
+    position: absolute;
+    padding: 1rex 2rem;
+    top: 70%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+.banner-btn:hover {
+    color: #333;
+    background-color: white;
+    
+}
+
+/* top trek section */
+.container1{
+    padding-top: 2.2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.container2{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.container-main{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    gap: 20px;
+
+}
+.container:hover {
+    transform: scale(1.05); /* Slightly enlarge the element */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+}
+.container{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 430px; /* Adjust the width as needed */
+    text-align: center;
+
+}
+.con-img{
+    width:25rem;
+    height: 18rem;
+    display: grid;
+    padding: 0 1rem;
+}
+.con-text{
+    background-color: rgb(228, 228, 228);
+    padding-left: 2rem;
+    padding: 0 2rem;
+    width:21rem;
+  margin-left: 1rem;
+   height: 14rem; 
+}
+.con-text1{
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 1rem;
+}
+.con-text2{
+   font-weight: 100;
+   font-size: 15px;
+}
+.con-btn{
+    font-size: 1rem;
+    background-color: coral;
+    border-radius: 2rem;
+    padding: 0.2rem 2rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem; 
+}
+.con-btn:hover {
+    color: #333;
+    background-color: white;
+    border-radius: 6px;
+}
+.container1{
+    color: rgb(59, 50, 50);
+}
+
+/* service section */
+.contant-main{
+    display: flex;
+    padding-left: 1rem;
+    margin-right: 60px;
+}
+
+.contant-main1{
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    gap: 20px;
+
+}
+.contant{
+    width: 24rem;
+    height: 12rem;
+    border:5px solid rgb(228, 228, 228);
+    padding-left: 1.5rem;
+    margin-left: 3.1rem;
+    margin-top: 1.5rem;
+    border-radius: 15px;
+    font-family: 'Georgia', serif;
+}
+.contant:hover {
+    transform: scale(1.05); /* Slightly enlarge the element */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+}
+
+.contant h1{
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-right: 2rem;
+}
+.contant p{
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 2rem;
+    font-style: italic;
+    font-display: solid ;
+}
+
+/* review section */
+.review {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.review-details {
+    flex-grow: 1;
+}
+
+.review-author {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.review-date {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #333;
+}
+
+/*footer section */
+.footer {
+    position: relative;
+    width: 100%;
+    background: rgb(10, 10, 30);
+    min-height: 100px;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;  
+  }
+  .social-icon__link:hover {
+    color: #5018d4; /* Gold color on hover */
+}
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  .menu__link:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
