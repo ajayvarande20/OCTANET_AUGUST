@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 15px;
+    cursor: pointer;
+}
+  
+.close:hover {
+    background-color: #ce0d0d;
+    color: white;
+}
+
+.edit {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    padding: 12px 14px;
+    cursor: pointer;
+}
+  
+.edit:hover {
+    background-color: #32a83a;
+    color: white;
+}
+
+.header {
+    background-color: #3632b9;
+    padding: 30px 40px;
+    
+    color: white;
+    text-align: center;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title1 {
+    font-size: 50px;
+}
+
+.title1:hover {
+    color:  #ecf71d;
+}
+
+#title2 {
+    font-size: 30px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+form input {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    max-width: 500px;
+    transition: background-color 200ms ease-in-out;
+    width: 100%;
+}
+
+.todo-input {
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 15px; /* Make the corners curved */
+    
+}
+
+/* Hover effect for the input field */
+.todo-input:hover {
+    border-color: #3498db; /* Change the border color on hover */
+    background-color: #f0f8ff; /* Lighten the background on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for the submit button */
+.todo-btn {
+    font-size: 30px;
+    margin-left: 5px;
+    background-color: #d9d9d9; /* Default background color */
+    color: #555; /* Default text color */
+    border-radius: 15px; /* Make the corners curved */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding:3px;
+}
+
+.todo-btn:hover {
+    background-color: #3498db; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: translateY(-2px); /* Slightly move the button up on hover */
+}
+
+
+#clear-list {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+}
+
+#clear-list:hover {
+    background-color: #3632b9;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0eaea;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 430px) {
+    input {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .todo-btn {
+        margin-left: 130px;
+        font-size: 14px;
+    }
+    
+    ul li {
+        font-size: 12px;
+    }
+
+    #clear-list {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .todo-btn {
+        margin-left: 110px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .todo-btn {
+        margin-left: 88px;
+        font-size: 14px;
+    }
+}
